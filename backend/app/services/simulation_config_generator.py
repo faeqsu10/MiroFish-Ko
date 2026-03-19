@@ -28,7 +28,7 @@ from .zep_entity_reader import EntityNode, ZepEntityReader
 logger = get_logger('mirofish.simulation_config')
 
 # 시간대 기본 설정(한국/동아시아 소셜 활동 패턴 기준)
-CHINA_TIMEZONE_CONFIG = {
+KST_TIMEZONE_CONFIG = {
     # 심야
     "dead_hours": [0, 1, 2, 3, 4, 5],
     # 아침

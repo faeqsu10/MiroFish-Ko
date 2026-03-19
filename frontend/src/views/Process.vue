@@ -503,7 +503,7 @@ const formatDate = (dateStr) => {
   if (!dateStr) return '-'
   try {
     const date = new Date(dateStr)
-    return date.toLocaleString('zh-CN', {
+    return date.toLocaleString('ko-KR', {
       year: 'numeric',
       month: 'short',
       day: 'numeric',
@@ -1104,7 +1104,7 @@ onUnmounted(() => {
 .process-page {
   min-height: 100vh;
   background: var(--white);
-  font-family: 'JetBrains Mono', 'Noto Sans SC', monospace;
+  font-family: 'JetBrains Mono', 'Noto Sans KR', monospace;
   overflow: hidden; /* Prevent body scroll in fullscreen */
 }
 

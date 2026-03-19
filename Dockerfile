@@ -1,8 +1,10 @@
 FROM python:3.11
 
-# Node.js(>=18)와 필수 도구 설치
+# Node.js 20 LTS 설치 (NodeSource)
 RUN apt-get update \
-  && apt-get install -y --no-install-recommends nodejs npm \
+  && apt-get install -y --no-install-recommends ca-certificates curl gnupg \
+  && curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+  && apt-get install -y --no-install-recommends nodejs \
   && rm -rf /var/lib/apt/lists/*
 
 # uv 공식 이미지에서 uv 바이너리 복사

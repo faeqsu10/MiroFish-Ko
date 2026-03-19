@@ -319,8 +319,8 @@ const startSimulation = () => {
     index.html에 해당 Google Fonts가 로드되어 있어야 합니다.
   */
   --font-mono: 'JetBrains Mono', monospace;
-  --font-sans: 'Space Grotesk', 'Noto Sans SC', system-ui, sans-serif;
-  --font-cn: 'Noto Sans SC', system-ui, sans-serif;
+  --font-sans: 'Space Grotesk', 'Noto Sans KR', system-ui, sans-serif;
+  --font-kr: 'Noto Sans KR', system-ui, sans-serif;
 }
 
 .home-container {
